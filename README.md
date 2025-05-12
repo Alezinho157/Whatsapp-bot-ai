@@ -58,3 +58,19 @@ Este bot para WhatsApp é baseado em **Node.js** e **whatsapp-web.js**. Ele resp
 ## Licença
 
 Distribuído sob a Licença MIT. Veja o arquivo `LICENSE` para mais informações.
+
+#SSH
+ssh-keygen -t rsa -b 4096 -C "seu-email@exemplo.com"
+
+eval "$(ssh-agent -s)"
+ssgit remote set-url origin git@github.com:seu-usuario/seu-repositorio.gith-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+git remote set-url origin git@github.com:seu-usuario/seu-repositorio.git
+ssh -T git@github.com
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+  
+  
